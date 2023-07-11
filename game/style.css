@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url(./back.jpg);
+    background-image: url(/img/back2.jpg);
     background-size: cover;    
 }
 
@@ -78,3 +78,29 @@ transition: 1.2;
 .null{
     padding-top: 0 ;
 }
+
+
+.game-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.card{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+
+
+.rotate{
+    transform: perspective(350px) rotateY(180deg);
+    transition: 0.5s;
+}
+
